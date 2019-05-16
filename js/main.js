@@ -184,5 +184,6 @@ function scoreRender(){
     scorePage.style.display = "block";
     document.getElementById("score").innerHTML = score;
     currentQuestionIndex = 0;
-    score = 0;
+    score = 0;    
+    end.style.display = "none";
 }
