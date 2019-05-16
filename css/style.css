@@ -10,7 +10,8 @@ header {
 
 img {
     display: inline-block;
-
+    background-size: cover;
+    max-width: 100%;
 }
 
 h1 {
@@ -68,7 +69,11 @@ button[type="submit"] {
 #A:focus, #B:focus, #C:focus, #D:focus{
     background-color: #938988;
     border: 0;
-    outline: none;
+    outline: none!important;
+}
+
+#A:active, #B:active, #C:active, #D:active {
+    outline: none!important;  
 }
 
 #question-page, #answer-page, #score-page {
