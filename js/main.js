@@ -116,11 +116,11 @@ let questions = [
 }
 ];
 
+// VARIABLES
 
 const lastQuestionIndex = questions.length - 1;
 let currentQuestionIndex = 0;
 score = 0;
-
 
 // FUNCTION RENDER QUESTIONS & ANSWERS
 
@@ -135,10 +135,9 @@ function renderQuestion(){
     d.innerHTML = q.d;
 };
 
-
-
 start.addEventListener('click', startQuiz);
 
+// START QUIZ function
 function startQuiz(){
     start.style.display = "none";    
     answerPage.style.display = "none";
@@ -146,6 +145,8 @@ function startQuiz(){
     questionPage.style.display = "block";    
     renderQuestion();      
 }
+
+//CHECK ANSWER function
 
 function checkAnswer(answer){    
     if (answer == questions[currentQuestionIndex].correct){
@@ -170,9 +171,10 @@ function checkAnswer(answer){
     } else {
         scoreRender();
     }  
-    console.log(score);
+    //console.log(score);
 };
 
+// RENDER SCORE 
 function scoreRender(){
     questionPage.style.display = "none";
     answerPage.style.display = "none";
