@@ -102,3 +102,7 @@ button[type="submit"] {
 #score {
     width: 300px;
 } 
+
+#try-again {
+    margin-top: 100px;
+}
