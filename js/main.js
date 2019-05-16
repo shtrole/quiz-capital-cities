@@ -138,6 +138,7 @@ function renderQuestion(){
 start.addEventListener('click', startQuiz);
 
 // START QUIZ function
+
 function startQuiz(){
     start.style.display = "none";    
     answerPage.style.display = "none";
@@ -146,7 +147,7 @@ function startQuiz(){
     renderQuestion();      
 }
 
-//CHECK ANSWER function
+// CHECK ANSWER function
 
 function checkAnswer(answer){    
     if (answer == questions[currentQuestionIndex].correct){
@@ -169,12 +170,14 @@ function checkAnswer(answer){
         currentQuestionIndex++;
         renderQuestion();
     } else {
-        scoreRender();
+        answerPage.style.display = "block";
+        next.style.display = "none";
+        end.style.display = "inline-block";
     }  
-    //console.log(score);
 };
 
-// RENDER SCORE 
+// SHOW SCORE function
+
 function scoreRender(){
     questionPage.style.display = "none";
     answerPage.style.display = "none";
