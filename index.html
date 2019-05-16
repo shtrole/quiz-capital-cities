@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz app</title>
+    <!-- jQuery, Popper & Bootstrap js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- My css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <!-- Fonts css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+</head>    
+
+<body>
+    <div class="quiz container text-center">
+        <header>
+            <div>
+                <img src="./images/logo.png" alt="Quiz Logo City Silhouette">
+            </div>
+        </header>
+        
+        <main>
+            <div class="intro-page">
+                <h1>Quiz</h1>
+                <p id="quiz-topic">Guess capital cities of Europe.</p>
+                <button class="btn" id="start" onclick="startQuiz()">Start</button>
+            </div>
+
+            <div id="question-page">
+                <p id="question-number"></p>
+                <h3 id="question">Question...</h3>
+                <span class="abcd">A</span><button class="btn choice" id="A" onclick="checkAnswer('A')"></button><br>
+                <span class="abcd">B</span><button class="btn choice" id="B"  onclick="checkAnswer('B')"></button><br>
+                <span class="abcd">C</span><button class="btn choice" id="C"  onclick="checkAnswer('C')"></button><br>
+                <span class="abcd">D</span><button class="btn choice" id="D"  onclick="checkAnswer('D')"></button>
+            </div>
+            
+            <div id="answer-page">
+                <h3>Your answer is...</h3>
+                <div id="answer">
+                    <button class="btn" id="correct"><span>Correct!</span></button><br>
+                    <button class="btn" id="wrong"><span>Wrong!</span></button><br>
+                </div>
+                <button class="btn" id="next" onclick="startQuiz()">Next question</button>
+                <button class="btn" id="end" onclick="scoreRender()">End</button>
+            </div>
+
+            <div id="score-page">
+                <h3>Your score is...</h3>
+                <button class="btn" id="score">X</button><br>
+                <button class="btn" id="start-again" onclick="startQuiz()">Try again</button><br>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- My js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
