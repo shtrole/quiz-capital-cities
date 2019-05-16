@@ -55,6 +55,11 @@ h3 {
     vertical-align: middle;
 }
 
+#start:focus, #next:focus, #end:focus, #try-again:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 button[type="submit"] {
     width: 250px;
     background-color: #fb8874;
@@ -69,11 +74,13 @@ button[type="submit"] {
 #A:focus, #B:focus, #C:focus, #D:focus{
     background-color: #938988;
     border: 0;
-    outline: none!important;
+    outline: none;
+    box-shadow: none;
 }
 
 #A:active, #B:active, #C:active, #D:active {
-    outline: none!important;  
+    outline: none;  
+    box-shadow: none;
 }
 
 #question-page, #answer-page, #score-page {
