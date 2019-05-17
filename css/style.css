@@ -21,6 +21,17 @@ h1 {
     text-transform: uppercase;   
 }
 
+h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+button[type="submit"] {
+    width: 250px;
+    background-color: #fb8874;
+    border-color: #fb8874;
+}
+
 .btn {
     background-color: #fb8874;
     border-color: #fb8874;
@@ -35,14 +46,11 @@ h1 {
     box-shadow: 3px 3px 5px 0px rgba(120,120,120,0.58);      
 }
 
-#A, #B, #C, #D, #next {
-    display: inline-block;
+.btn:hover {
+    background-color: #f73c20;
+    color: #FFFFFF;
 }
 
-h3 {
-    text-transform: uppercase;
-    font-size: 20px;
-}
 
 .abcd {
     font-size: 20px;
@@ -51,25 +59,18 @@ h3 {
     vertical-align: middle;
 }
 
-#start:focus, #next:focus, #end:focus, #try-again:focus, #A:focus, #B:focus, #C:focus, #D:focus, #A:active, #B:active, #C:active, #D:active  {
-    outline: none;
-    box-shadow: none;
-}
-
-button[type="submit"] {
-    width: 250px;
-    background-color: #fb8874;
-    border-color: #fb8874;
-}
-
-.btn:hover {
-    background-color: #f73c20;
-    color: #FFFFFF;
+#A, #B, #C, #D, #next {
+    display: inline-block;
 }
 
 #A:focus, #B:focus, #C:focus, #D:focus{
     background-color: #938988;
     border: 0;
+}
+
+#start:focus, #next:focus, #end:focus, #try-again:focus, #A:focus, #B:focus, #C:focus, #D:focus, #A:active, #B:active, #C:active, #D:active  {
+    outline: none;
+    box-shadow: none;
 }
 
 #question-page, #answer-page, #score-page, #correct, #wrong, #end {
