@@ -39,10 +39,6 @@ h1 {
     display: inline-block;
 }
 
-#end {
-    display: none;
-}
-
 h3 {
     text-transform: uppercase;
     font-size: 20px;
@@ -55,7 +51,7 @@ h3 {
     vertical-align: middle;
 }
 
-#start:focus, #next:focus, #end:focus, #try-again:focus {
+#start:focus, #next:focus, #end:focus, #try-again:focus, #A:focus, #B:focus, #C:focus, #D:focus, #A:active, #B:active, #C:active, #D:active  {
     outline: none;
     box-shadow: none;
 }
@@ -74,17 +70,9 @@ button[type="submit"] {
 #A:focus, #B:focus, #C:focus, #D:focus{
     background-color: #938988;
     border: 0;
-    outline: none;
-    box-shadow: none;
 }
 
-#A:active, #B:active, #C:active, #D:active {
-    outline: none;  
-    box-shadow: none;
-}
-
-#question-page, #answer-page, #score-page {
-    /* display: block; */
+#question-page, #answer-page, #score-page, #correct, #wrong, #end {
     display: none;
 }
 
@@ -92,12 +80,11 @@ button[type="submit"] {
     color: #fb8874;
 }
 
-#correct, #wrong {
+#correct, #wrong, #score {
     pointer-events: none;
-    display: none;
 }
 
-#correct {
+#correct, #score {
     background-color: #616ef9;
     border: #616ef9;
 }
