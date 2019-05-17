@@ -124,8 +124,9 @@ score = 0;
 
 // FUNCTION RENDER QUESTIONS & ANSWERS
 
-function renderQuestion(){    
+function renderQuestion(){
     document.getElementById("header").style.display = "none";
+    document.getElementById("quiz").style.visibility = "hidden";
     quizTopic.style.display = "none";
     let q = questions[currentQuestionIndex];
     questionNo.innerHTML = "Question " + (currentQuestionIndex + 1) + " / " + questionTotal;
@@ -180,11 +181,14 @@ function checkAnswer(answer){
 // SHOW SCORE function
 
 function scoreRender(){
+    document.getElementById("header").style.display = "block";
+    document.getElementById("quiz").style.visibility = "visible";
+    quizTopic.style.display = "block";
     questionPage.style.display = "none";
     answerPage.style.display = "none";
     scorePage.style.display = "block";
     document.getElementById("score").innerHTML = score;
     currentQuestionIndex = 0;
-    score = 0;    
+    score = 0;
     end.style.display = "none";
 }
