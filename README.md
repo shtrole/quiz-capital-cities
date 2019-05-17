@@ -5,6 +5,7 @@ Quiz game quess capital cities of Europe
 - Topic is Capital cities of Europe
 - Quiz starts by clicking on START button
 - Each question has 4 possible choices with only one correct answer
+- For each question there is a progress bar above the question
 - After each answer user gets Correct(blue box) or Wrong(red box) message and a button to procede to the next question
 - For each correct answer user gets 1 point
 - If user answers incorrectly points are not substracted
