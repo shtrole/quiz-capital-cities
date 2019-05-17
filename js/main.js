@@ -125,7 +125,7 @@ score = 0;
 // FUNCTION RENDER QUESTIONS & ANSWERS
 
 function renderQuestion(){    
-    document.getElementById('header').style.display = "none";
+    document.getElementById("header").style.display = "none";
     quizTopic.style.display = "none";
     let q = questions[currentQuestionIndex];
     questionNo.innerHTML = "Question " + (currentQuestionIndex + 1) + " / " + questionTotal;
